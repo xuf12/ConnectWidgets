@@ -1,0 +1,106 @@
+---
+title: "Genomics and medical image analysis"
+format:
+  html:
+    pagetitle: ""
+    description-meta: "" 
+    twitter-card: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(connectwidgets)
+library(dplyr)
+library(stringr)
+client <- connect()
+all_content <- client %>% content()
+```
+
+<br>
+
+## Background
+
+This project illustrates using Posit Connect to deploy genomics and image analysis projects:
+
+![](./xOVmf9Gpc-750x375.jpg)
+
+### Completed Jobs and Reports
+
+- Genome processing jobs and their output reports
+- Genome viewer reports
+- Modeling notebooks
+
+### Scheduled jobs
+
+- Scheduled Rmarkdown reports
+- Scheduled Jupyter Notebooks
+
+### APIs
+
+- A deep learning based medical image classification model using MONAI and PyTorch depoloyed in FastAPI
+
+### Apps
+  
+- A Shiny app that renders and classifies images from the internet using the API 
+
+## Content
+
+Explore the deployed items below:
+
+### Completed Jobs and Reports
+
+::: {.panel-tabset}
+
+#### Genome processing reports
+
+```{r}
+all_content %>% 
+  by_tag("genome processing") %>%
+  arrange(title) %>%
+  rsc_card()
+```
+
+#### Genome viewer reports
+
+```{r}
+all_content %>% 
+  by_tag("genome viewer reports") %>%
+  arrange(title) %>%
+  rsc_card()
+```
+
+#### Modeling notebook
+
+```{r}
+all_content %>% 
+  by_tag("modeling") %>%
+  arrange(title) %>%
+  rsc_card()
+```
+
+:::
+
+### Scheduled Jobs
+
+```{r}
+all_content %>%
+  by_tag("single-cell analysis") %>%
+  rsc_card()
+```
+
+### APIs
+
+```{r}
+all_content %>%
+  by_tag("FastAPI") %>%
+  filter(str_detect(title, "API")) %>%
+  rsc_card()
+```
+
+### Apps
+
+```{r}
+all_content %>%
+  by_tag("Shiny") %>%
+  rsc_card()
+```

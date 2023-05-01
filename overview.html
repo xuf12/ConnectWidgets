@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.253">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>quarto-input4a98e18c</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="overview_files/libs/clipboard/clipboard.min.js"></script>
+<script src="overview_files/libs/quarto-html/quarto.js"></script>
+<script src="overview_files/libs/quarto-html/popper.min.js"></script>
+<script src="overview_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="overview_files/libs/quarto-html/anchor.min.js"></script>
+<link href="overview_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="overview_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="overview_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="overview_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="overview_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="overview_files/libs/core-js-2.5.3/shim.min.js"></script>
+<script src="overview_files/libs/react-17.0.0/react.min.js"></script>
+<script src="overview_files/libs/react-17.0.0/react-dom.min.js"></script>
+<script src="overview_files/libs/reactwidget-1.0.0/react-tools.js"></script>
+<script src="overview_files/libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="overview_files/libs/dayjs-1.10.4/dayjs.min.js"></script>
+<script src="overview_files/libs/dayjs-1.10.4/plugin/localizedFormat.js"></script>
+<script src="overview_files/libs/rsc_card-binding-0.1.1/rsc_card.js"></script>
+<script src="overview_files/libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="overview_files/libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="overview_files/libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="overview_files/libs/rsc_card-default-theme-0.1.0-0.1.0/rsc_card-default-theme-0.1.0.css" rel="stylesheet">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Genomics and medical image analysis</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<!-- ::: {.column-screen} -->
+<!-- `<div class="ribbon-parent" style="position:absolute;top:0px;overflow:hidden;width:150px;height:150px;z-index:5;pointer-events:none;right:0px;">
+<div class="ribbon" style="background-color:white;overflow:hidden;white-space:nowrap;position:absolute;top:45px;box-shadow:0 0 10px #888;pointer-events:auto;right:-50px;transform:rotate(45deg);">
+<a href="https://github.com/sol-eng/bike_predict" style="border:1px solid white;color:black;display:block;font:bold 95% &#39;Collegiate&#39;, Arial, sans-serif;margin:1px 0;padding:6px 50px;text-align:center;text-decoration:none;letter-spacing:-0.3px;" target="_blank">View on GitHub</a>
+</div>
+</div>
+<style>
+.ribbon:hover {opacity:1;}
+.ribbon {opacity:0.6;transition:opacity 0s ease 0s;}
+</style>`{=html} -->
+<!-- ```{css, echo=FALSE} -->
+<!-- .jumbotron { -->
+<!--   color: white; -->
+<!--   background-image: url("https://source.unsplash.com/zbUH21c9ARk/1920x1080"); -->
+<!--   background-position: center; -->
+<!--   background-repeat: no-repeat; -->
+<!--   background-size: cover; -->
+<!--   height: 30vh; -->
+<!--   padding-top: 0px; -->
+<!--   margin-top: 0px; -->
+<!-- } -->
+<!-- .jumbotron-title { -->
+<!--   margin-left: 25px; -->
+<!--   margin-right: 25px; -->
+<!-- } -->
+<!-- .quarto-title { -->
+<!--   display: none; -->
+<!-- } -->
+<!-- ``` -->
+<!-- <div class="jumbotron jumbotron-fluid"> -->
+<!-- <div class="container"> -->
+<!-- <h1 class="display-3 jumbotron-title" color="#f0f0f0">Bike Share</h1> -->
+<!-- <p class="lead jumbotron-title">End-to-End Data Science with RStudio Connect</p> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- ::: -->
+<p><br></p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>This project illustrates using Posit Connect to deploy genomics and image analysis projects:</p>
+<p><img src="./Andrew-Casey-feature.t63188309.m800.xOVmf9Gpc-750x375.jpg" class="img-fluid"></p>
+<section id="scheduled-jobs" class="level3">
+<h3 class="anchored" data-anchor-id="scheduled-jobs">Scheduled jobs</h3>
+<ul>
+<li>Scheduled genome processing jobs and their reports</li>
+<li>Genome viewer reports</li>
+<li>Modeling notebooks</li>
+</ul>
+</section>
+<section id="apis" class="level3">
+<h3 class="anchored" data-anchor-id="apis">APIs</h3>
+<ul>
+<li>A deep learning based medical image classification model using MONAI and PyTorch depoloyed in FastAPI</li>
+</ul>
+</section>
+<section id="apps" class="level3">
+<h3 class="anchored" data-anchor-id="apps">Apps</h3>
+<ul>
+<li>A Shiny app that renders and classifies images from the internet using the API</li>
+</ul>
+</section>
+</section>
+<section id="content" class="level2">
+<h2 class="anchored" data-anchor-id="content">Content</h2>
+<p>Explore the deployed items below:</p>
+<section id="scheduled-jobs-1" class="level3">
+<h3 class="anchored" data-anchor-id="scheduled-jobs-1">Scheduled Jobs</h3>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Genome viewer reports</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Modeling</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-4ddfd9fb0514cbf68e1d" class="rsc_card html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-4ddfd9fb0514cbf68e1d">{"x":{"tag":{"name":"CardView","attribs":{"data":{"id":[12,14,13],"guid":["a11d276f-4158-4b00-9bed-521db3736dc8","ef1c452a-c0a5-4dda-a362-2b6ce669b43f","5f96b3bd-0563-46d7-8686-8de05f7ef896"],"name":["igv_reports1","igv_reports2","vcf_report"],"title":["Genome identifier report","IGV reports","VCF report"],"description":["","",""],"app_mode":["static","static","static"],"content_category":["","",""],"url":["https://maryland.positlabs.xyz/rsc/content/a11d276f-4158-4b00-9bed-521db3736dc8/","https://maryland.positlabs.xyz/rsc/content/ef1c452a-c0a5-4dda-a362-2b6ce669b43f/","https://maryland.positlabs.xyz/rsc/content/5f96b3bd-0563-46d7-8686-8de05f7ef896/"],"owner_guid":["dc2f1332-a64e-4345-aa40-d168f122397f","dc2f1332-a64e-4345-aa40-d168f122397f","dc2f1332-a64e-4345-aa40-d168f122397f"],"owner_username":["xuf12","xuf12","xuf12"],"owner_first_name":["","",""],"owner_last_name":["","",""],"created_time":["2022-11-23T02:07:14Z","2022-11-23T02:10:54Z","2022-11-23T02:09:08Z"],"updated_time":["2022-11-23T02:07:14Z","2022-11-23T02:10:55Z","2022-11-23T02:09:08Z"],"tags":[{"id":["2"],"name":["genome viewer reports"],"parent_id":["1"],"created_time":["2022-12-06T18:15:04Z"],"updated_time":["2022-12-06T18:15:19Z"]},{"id":["2"],"name":["genome viewer reports"],"parent_id":["1"],"created_time":["2022-12-06T18:15:04Z"],"updated_time":["2022-12-06T18:15:19Z"]},{"id":["2"],"name":["genome viewer reports"],"parent_id":["1"],"created_time":["2022-12-06T18:15:04Z"],"updated_time":["2022-12-06T18:15:19Z"]}]}},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-ea2e4ab3b164429b9c31" class="rsc_card html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-ea2e4ab3b164429b9c31">{"x":{"tag":{"name":"CardView","attribs":{"data":{"id":[20],"guid":["0affae04-45b1-4c3f-b347-900fefcbcb84"],"name":["mednist_model_training"],"title":["MedNIST model training"],"description":[""],"app_mode":["static"],"content_category":[""],"url":["https://maryland.positlabs.xyz/rsc/content/0affae04-45b1-4c3f-b347-900fefcbcb84/"],"owner_guid":["dc2f1332-a64e-4345-aa40-d168f122397f"],"owner_username":["xuf12"],"owner_first_name":[""],"owner_last_name":[""],"created_time":["2022-12-06T02:00:28Z"],"updated_time":["2022-12-06T02:00:28Z"],"tags":[{"id":["10"],"name":["modeling"],"parent_id":["9"],"created_time":["2022-12-06T18:18:24Z"],"updated_time":["2022-12-06T18:18:24Z"]}]}},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="apis-1" class="level3">
+<h3 class="anchored" data-anchor-id="apis-1">APIs</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-bae5d40951954d687167" class="rsc_card html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-bae5d40951954d687167">{"x":{"tag":{"name":"CardView","attribs":{"data":{"id":[16],"guid":["1ee56bfb-3d5d-47c2-8ec6-265fc85d6550"],"name":["mednist"],"title":["DenseNet image classification API"],"description":[""],"app_mode":["python-fastapi"],"content_category":[""],"url":["https://maryland.positlabs.xyz/rsc/content/1ee56bfb-3d5d-47c2-8ec6-265fc85d6550/"],"owner_guid":["dc2f1332-a64e-4345-aa40-d168f122397f"],"owner_username":["xuf12"],"owner_first_name":[""],"owner_last_name":[""],"created_time":["2022-12-05T01:42:20Z"],"updated_time":["2022-12-05T01:42:21Z"],"tags":[{"id":["12"],"name":["FastAPI"],"parent_id":["6"],"created_time":["2022-12-06T18:22:25Z"],"updated_time":["2022-12-06T18:22:25Z"]}]}},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="apps-1" class="level3">
+<h3 class="anchored" data-anchor-id="apps-1">Apps</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-8e3721feece73779dd7c" class="rsc_card html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-8e3721feece73779dd7c">{"x":{"tag":{"name":"CardView","attribs":{"data":{"id":[21],"guid":["5a22fbaa-1166-489f-b558-a8118f3024bd"],"name":["medical_image_classification_app"],"title":["DenseNet medical image classification app"],"description":[""],"app_mode":["shiny"],"content_category":[""],"url":["https://maryland.positlabs.xyz/rsc/content/5a22fbaa-1166-489f-b558-a8118f3024bd/"],"owner_guid":["dc2f1332-a64e-4345-aa40-d168f122397f"],"owner_username":["xuf12"],"owner_first_name":[""],"owner_last_name":[""],"created_time":["2022-12-06T05:51:21Z"],"updated_time":["2022-12-06T06:03:09Z"],"tags":[{"id":["11"],"name":["Shiny"],"parent_id":["7"],"created_time":["2022-12-06T18:22:21Z"],"updated_time":["2022-12-06T18:22:21Z"]}]}},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
